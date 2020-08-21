@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2014097024_김태균_과제3</title>
+    <style>
+       
+        #dva {
+            float: left;
+            margin-right: -1px;
+            width:50px;
+            height: 50px;
+            border: 1px solid red;
+            border-top-left-radius: 100%;
+            text-align: center;
+            padding-top: 12px;
+            animation: cutA 4s linear infinite alternate;
+        } 
+            @keyframes cutA {
+                from {background-color: red;}
+                25% {background-color: blue;}
+                50% {background-color: purple;}
+                75% {background-color: yellow;}
+                100% {background-color: black;}
+            }
+
+         #dvb {
+         float: left;
+         width:50px;
+         height: 50px;
+         border: 1px solid red;
+         border-top-right-radius: 100%;
+         text-align: center;
+         padding-top: 12px;
+         animation: cutB 4s linear infinite alternate;
+         }
+         @keyframes cutB {
+             from {background-color: chartreuse;}
+             25% {background-color: darkgray;}
+             50% {background-color: darkkhaki;}
+             75% {background-color: forestgreen;}
+             100% {background-color: firebrick;}
+         }
+         #dvc {
+         float: left;
+         margin-right: -1px;
+         margin-top: -1px;
+         width:50px;
+         height: 50px;
+         border: 1px solid red;
+         border-bottom-left-radius: 100%;
+         text-align: center;
+         clear: both;
+         padding-top: 12px;
+         animation: cutC 4s linear infinite alternate;
+         }
+         @keyframes cutC {
+             from {background-color: gold;}
+             25% {background-color: indigo;}
+             50% {background-color: hotpink;}
+             75% {background-color: wheat;}
+             100% {background-color: turquoise;}
+        }     
+         #dvd {
+         float: left;
+         margin-top: -1px;
+         width:50px;
+         height: 50px;
+         border: 1px solid red;
+         border-bottom-right-radius: 100%;
+         text-align: center;
+         padding-top: 12px;
+         background: rgb(0,100,230);
+         animation: cutD 4s linear infinite alternate;
+         }
+         @keyframes cutD {
+             from {background-color: chartreuse;}
+             25% {background-color: cornflowerblue;}
+             50% {background-color: darkslateblue;}
+             75% {background-color: blueviolet;}
+             100% {background-color: orange;}
+         }
+    </style>
+</head>
+<body>
+    <div id="dva">1</div>
+    <div id="dvb">2</div>
+    <div id="dvc">3</div>
+    <div id="dvd">4</div>
+</body>
+</html>

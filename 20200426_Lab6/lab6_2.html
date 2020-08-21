@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2014097024 김태균 과제2</title>
+</head>
+<body>
+    <script>
+      var array = [];
+      for(var dan = 1; dan<=9; dan++) array[dan] = new Array();
+      
+      for (var i = 1; i<=9; i++){
+         for (var j = 1; j <=9; j++){
+            array[i][j] = i*j;
+         }
+      }
+      
+      function printData(){
+         for (var x = 1; x<=9; x++){
+            for(var y =1; y<=9; y++){
+               document.write(array[x][y] + " ");
+            }
+            document.write("<br>");
+         }
+         document.write("<p/> <a href = 'lab6_2.html'>돌아가기</a>");
+      }
+   
+      document.write("<table border = '1'>"); 
+          document.write("<tr>");
+           
+       for (i = 1; i <= 9; i++) {
+            document.write("<td>" +i + "단</td>")
+         }
+       document.write("</tr>");
+
+        for (j = 1; j <= 9; j++) {
+            document.write("<tr>");
+             for (i = 1; i <= 9; i++) {
+                  document.write("<td>" + i + "*" + j + "=" + array[i][j] + "</td>");
+                }
+                document.write("</tr>");
+         } 
+        
+        document.write("</table>");
+      </script>
+      <p/>
+      <button type="button" onclick="printData()">구구단 배열 데이터 보기</button>    
+</body>
+</html>
